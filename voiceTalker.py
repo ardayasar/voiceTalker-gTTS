@@ -7,7 +7,7 @@ error_log = os.getcwd() + "\error.log"
 while True:
     try:
         data = input("What should I say?: ")
-        tts = gTTS(text=data, lang='tr')
+        tts = gTTS(text=data, lang='en')
         tts.save(data[0]+".mp3")
         os.system("start " + data[0]+".mp3")
         time.sleep(1)
